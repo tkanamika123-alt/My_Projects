@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>webpages</title>
+  <style>
+   /* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  background: black;
+  color: white;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+}
+
+.nav-links li {
+  margin-left: 20px;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+}
+
+/* Hero Section (Red Header) */
+.contact-hero {
+  background: linear-gradient(to right, #ff5a5a, #ff7a7a);
+  text-align: center;
+  padding: 50px 20px;
+  color: black;
+}
+
+.contact-hero h1 {
+  font-size: 28px;
+}
+
+.contact-hero p {
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+/* Form Container */
+.contact-container {
+  display: flex;
+  justify-content: center;
+  padding: 40px;
+  background: #f2f2f2;
+}
+
+/* Form Box */
+.contact-box {
+  background: white;
+  padding: 25px;
+  width: 350px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-box label {
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+/* Inputs */
+.contact-box input,
+.contact-box textarea {
+  margin-top: 5px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+/* Button */
+.contact-box button {
+  margin-top: 15px;
+  padding: 10px;
+  background: black;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.contact-box button:hover {
+  background: #333;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .contact-box {
+    width: 90%;
+  }
+} 
+  </style>
+
+<!-- Navbar -->
+<header>
+  <nav class="navbar">
+    <div class="logo">MySite</div>
+
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<!-- Hero Header -->
+<section class="contact-hero">
+  <h1>Contact Us</h1>
+  <p>Fill the form below</p>
+</section>
+
+<!-- Form Section -->
+<section class="contact-container">
+  <form class="contact-box">
+    
+    <label>Name</label>
+    <input type="text" placeholder="Enter your name">
+
+    <label>Email</label>
+    <input type="email" placeholder="Enter your email">
+
+    <label>Message</label>
+    <textarea placeholder="Enter your message"></textarea>
+
+    <button type="submit">Submit</button>
+  </form>
+</section>
+
+</body>
+</html>
