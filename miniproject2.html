@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Mini Project</title>
+    <style>
+        /* General Reset */
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f4f4f4;
+        }
+
+        /* Navigation Bar */
+        nav {
+            background-color: #000;
+            padding: 15px 0;
+            display: flex;
+            justify-content: center;
+            gap: 50px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-size: 1rem;
+        }
+
+        nav a:hover {
+            color: #cca350;
+        }
+
+        /* About Us Hero Section */
+        .about-hero {
+            background-color: #cc8050; /* Green background from image */
+            padding: 40px 20px;
+            color: #000;
+        }
+
+        .about-hero h1 {
+            margin: 0;
+            font-size: 1.8rem;
+        }
+
+        .about-hero p {
+            margin-top: 10px;
+            font-size: 1rem;
+        }
+
+        /* Mission & Vision Section */
+        .content-container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 60px; /* Wider gap as seen in image */
+            padding: 60px 20px;
+        }
+
+        .card {
+            background: white;
+            border: 1px solid #ccc;
+            border-radius: 12px;
+            padding: 25px;
+            width: 280px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+        }
+
+        .card img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+
+        .card h2 {
+            margin: 10px 0;
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+
+        .card p {
+            color: #444;
+            font-size: 0.95rem;
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 600px) {
+            .content-container {
+                gap: 30px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+    </nav>
+
+    <section class="about-hero">
+        <h1>About Us</h1>
+        <p>This page tells about our website.</p>
+    </section>
+
+    <section class="content-container">
+        
+        <div class="card">
+            <img src="image.jpg" width="150">
+            <h2>mission</h2>
+            <p>To create responsive website</p>
+        </div>
+
+        <div class="card">
+            <img src="image.jpg" width="150">
+            <h2>vision</h2>
+            <p>To learn HTML and CSS</p>
+        </div>
+
+    </section>
+
+</body>
+</html>
