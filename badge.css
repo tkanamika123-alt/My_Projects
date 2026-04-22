@@ -1,0 +1,24 @@
+.card {
+  position: relative;   /* important for badge positioning */
+  width: 300px;
+  margin: 50px auto;
+}
+
+.card img {
+  width: 100%;
+  display: block;
+  border-radius: 10px;
+}
+
+.badge {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+
+  background-color: red;
+  color: white;
+  padding: 5px 10px;
+  font-size: 14px;
+  border-radius: 5px;
+  font-weight: bold;
+}
