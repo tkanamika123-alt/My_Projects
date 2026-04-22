@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Display Properties Demo</title>
+
+  <style>
+    body {
+      font-family: Arial;
+      padding: 20px;
+    }
+
+    h2 {
+      margin-top: 30px;
+    }
+
+    /* Common style */
+    .box {
+      background: lightblue;
+      padding: 10px;
+      margin: 5px;
+    }
+
+    /* Block */
+    .block {
+      display: block;
+    }
+
+    /* Inline */
+    .inline {
+      display: inline;
+      background: lightgreen;
+    }
+
+    /* Inline-block */
+    .inline-block {
+      display: inline-block;
+      width: 120px;
+      height: 60px;
+      background: orange;
+      text-align: center;
+      line-height: 60px;
+    }
+
+    /* None */
+    .none {
+      display: none;
+    }
+  </style>
+
+</head>
+<body>
+
+  <h1>Display Properties Example</h1>
+
+  <!-- BLOCK -->
+  <h2>1. Block</h2>
+  <div class="box block">Block 1</div>
+  <div class="box block">Block 2</div>
+
+  <!-- INLINE -->
+  <h2>2. Inline</h2>
+  <span class="box inline">Inline 1</span>
+  <span class="box inline">Inline 2</span>
+
+  <!-- INLINE-BLOCK -->
+  <h2>3. Inline-Block</h2>
+  <div class="inline-block">Box 1</div>
+  <div class="inline-block">Box 2</div>
+
+  <!-- NONE -->
+  <h2>4. Display None</h2>
+  <p>This text is visible</p>
+  <p class="none">This text is hidden</p>
+
+</body>
+</html>
